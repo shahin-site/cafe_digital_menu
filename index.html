@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10110f">
+    <meta name="description" content="منوی دیجیتال کافه">
+    <title>منوی دیجیتال کافه</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a class="brand" href="#">
+            <span class="brand-mark">✦</span>
+            <span>
+                CAFÉ
+                <small>ENJOY YOUR MOMENT</small>
+            </span>
+        </a>
+
+        <a class="top-link" href="#menu">
+            مشاهده منو ↓
+        </a>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    ✦ یک مکث خوش‌طعم در روزمرگی
+                </span>
+
+                <h1>
+                    لحظه‌هات رو
+                    <br>
+                    <em>با ما خاص کن</em>
+                </h1>
+
+                <p>
+                    از عطر قهوه تازه تا خنکای نوشیدنی‌های تابستانی؛
+                    انتخابت را پیدا کن و از لحظه لذت ببر.
+                </p>
+
+                <a class="gold-button" href="#menu">
+                    دیدن نوشیدنی‌ها ←
+                </a>
+
+            </div>
+
+            <div class="hero-art">
+
+                <div class="orbit orbit-a"></div>
+                <div class="orbit orbit-b"></div>
+
+                <div class="steam">〰</div>
+
+                <div class="cup">
+                    <div class="coffee">☕</div>
+                    <div class="cup-heart">♡</div>
+                </div>
+
+                <span class="spark spark-a">✦</span>
+                <span class="spark spark-b">✧</span>
+
+                <span class="art-caption">
+                    GOOD COFFEE
+                    <br>
+                    GOOD MOOD
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">
+                        ✦ انتخاب با شماست
+                    </span>
+
+                    <h2>
+                        منوی <em>کافه</em>
+                    </h2>
+                </div>
+
+                <label class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="جست‌وجوی نوشیدنی..."
+                        aria-label="جست‌وجوی نوشیدنی"
+                    >
+                </label>
+
+            </div>
+
+
+            <nav class="category-tabs">
+
+                <button class="tab active" data-filter="all">
+                    همه نوشیدنی‌ها
+                </button>
+
+                <button class="tab" data-filter="hot">
+                    بار گرم ☕
+                </button>
+
+                <button class="tab" data-filter="cold">
+                    بار سرد 🧊
+                </button>
+
+            </nav>
+
+
+            <div class="menu-grid">
+
+                <section class="menu-panel" data-category="hot">
+
+                    <div class="panel-title">
+
+                        <div class="panel-icon">
+                            ☕
+                        </div>
+
+                        <div>
+                            <h3>بار گرم</h3>
+                            <span>HOT BAR</span>
+                        </div>
+
+                        <b>01</b>
+
+                    </div>
+
+                    <div class="product-list" id="hotList"></div>
+
+                </section>
+
+
+                <section class="menu-panel" data-category="cold">
+
+                    <div class="panel-title">
+
+                        <div class="panel-icon cold-icon">
+                            ❄
+                        </div>
+
+                        <div>
+                            <h3>بار سرد</h3>
+                            <span>COLD BAR</span>
+                        </div>
+
+                        <b>02</b>
+
+                    </div>
+
+                    <div class="product-list" id="coldList"></div>
+
+                </section>
+
+            </div>
+
+            <p class="empty-state" id="emptyState" hidden>
+                نوشیدنی موردنظر پیدا نشد.
+            </p>
+
+            <p class="price-note">
+                برای اطلاع از قیمت‌ها با کافه تماس بگیرید.
+            </p>
+
+        </section>
+
+
+        <section class="quote-section">
+
+            <span class="quote-mark">“</span>
+
+            <p>
+                گاهی تمام چیزی که لازم داری،
+                <br>
+                <em>یک فنجان قهوه و کمی آرامش است.</em>
+            </p>
+
+            <span class="quote-line"></span>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+            CAFÉ <span>✦</span>
+        </div>
+
+        <p>
+            طعم خوب، حال خوب؛ کنار هم
+        </p>
+
+        <div class="credit">
+            طراح و سازنده
+            <strong>شاهین بخشی</strong>
+        </div>
+
+        <small>
+            © تمامی حقوق این طراحی محفوظ است.
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
